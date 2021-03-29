@@ -1,0 +1,143 @@
+
+#vis-area {
+
+}
+
+#main-vis-area {
+	border: 1px solid red;
+}
+
+#event-switcher {
+	width: 2590px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 100px;
+}
+
+/*#horizontal-events-scroller {
+	width: 2100px;
+	height: 100px;
+	overflow: auto;
+	white-space: nowrap;
+}*/
+
+#horizontal-events-scroller {
+	width: 2100px;
+	height: 100px;
+	/*overflow: auto;*/
+	overflow-x: scroll;
+	/*flex-wrap: nowrap;*/
+	/*overflow-y: hidden;*/
+	/*white-space: nowrap;*/
+	/*display: flex;*/
+	/*flex-direction: row;*/
+	/*flex-wrap: nowrap;*/
+	white-space: nowrap;
+	/*&::-webkit-scrollbar {
+	  display: none;
+	}*/
+	/*-webkit-overflow-scrolling: touch;*/
+}
+
+#horizontal-events-scroller::-webkit-scrollbar {
+	/*display: none;*/
+}
+
+#controls {
+	/*width: 2500px;*/
+	width: 2700px;
+	/*width: 3500px;*/
+	height: 100px;
+	background-color: red;
+}
+
+input.threshold-type {
+	width: 30px;
+	height: 30px;
+}
+
+label#label-threshold-fiber, label#label-threshold-cube{
+	font-size: 2em;
+}
+
+label#threshold {
+	font-size: 2.5em;
+}
+
+button.control {
+	height: 100px;
+	width: 250px;
+	font-size: 2em;
+}
+
+form.control {
+	height: 100px;
+	width: 200px;
+	/*font-size: 2em;*/
+	display: inline-block;
+	/*position: absolute;*/
+	/*background-color: black;*/
+}
+
+/*button#det-resp-btn {
+	background-color: green;
+}*/
+
+/*input[type=submit]#test-btn {
+	height: 100px;
+	width: 200px;
+	font-size: 2em;
+}*/
+
+input#test-btn.control {
+	height: 100px;
+	width: 200px;
+	font-size: 2em;
+}
+
+input#fiber-threshold {
+	font-size: 2.5em;
+	width: 200px;
+	text-align: center;
+}
+
+input#event-input {
+	font-size: 3em;
+	width: 200px;
+	text-align: center;
+}
+
+button#prev-event, button#next-event {
+	width: 100px;
+	height: 100px;
+	font-size: 3em;
+}
+
+button.event-scroller-btn {
+	width: 100px;
+	height: 100px;
+	font-size: 3em;
+}
+
+label {
+	width: 200px;
+	height: 100px;
+	font-size: 3em;
+	text-align: center;
+	line-height: 2em;
+}
+
+
+div#plotly-3d {
+	width: 2690px;
+	height: 2610px;
+	background-color: gray;
+	display: none;
+	border: 1px solid red;
+}
+
+div#display-area {
+	/*display: flex;*/
+	/*flex-direction: row;*/
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+<script type="text/javascript">
+	let svgFilesOfEventsArray = [
+		"{{url_for('static', filename='svg')}}/event-0.svg",
+	];
+</script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='html.css') }}">
+<link rel="shortcut icon">
+<title>Visualization</title>
+</head>
+<body>
+
+		<div id="vis-area">
+			<div id="event-switcher">
+				<button id="prev-event" onclick="prevEvent()"><</button>
+				<button id="next-event" onclick="nextEvent()">></button>
+				<input type="text" id="event-input">
+				<div id="horizontal-events-scroller"></div>
+			</div>
+			<div id="controls">
+				<button class="control" id="det-resp-btn">DetResp</button>
+				<button class="control" id="gammas-btn">&gamma;</button>
+				<button class="control" id="tracks-btn">Tracks</button>
+				<button class="control" id="short-tracks-btn">ShortTracks</button>
+				<button class="control" id="clusterize-btn">Clusterize c++</button>
+				<!-- <button class="control" id="clusterize-new-btn">Clusterize2</button> -->
+				<!-- <form class="control" action="/test-action" method="post"><button name="test-btn" class="control" id="test-btn">Clusterize3</button></form> -->
+				<button class="control" id="clusterize-4-btn">Clusterize</button>
+				<button class="control" id="show-in-3d">Show in 3d</button>
+				<!-- <input class="control" id="test-btn" type="submit" name="test-btn"> -->
+				<label id="threshold" value="0.0">Threshold (MeV): </label>
+				<input class="inputs" type="text" id="fiber-threshold" value="0.0"></input>
+				<!-- <input class="inputs" type="text" id="cubes-threshold"></input> -->
+				<!-- <input class="inputs threshold-type" type="checkbox" id="threshold-cube" value="0"></input> -->
+				<!-- <label id="label-threshold-cube" for="threshold-cube">Cube threshold</label> -->
+				<!-- <input class="inputs threshold-type" type="checkbox" id="threshold-fiber" value="0"></input> -->
+				<!-- <label id="label-threshold-fiber" for="threshold-fiber">Fiber threshold</label> -->
+			</div>
+			<!-- <object type='image/svg+xml' id="main-vis-area" data="" width="2690" height="2610"></object> -->
+			<!-- <div id="plotly-3d"></div> -->
+			<div id="display-area">
+				<object type='image/svg+xml' id="main-vis-area" data="" width="2690" height="2610"></object>
+				<div id="plotly-3d"></div>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="{{url_for('static', filename='html.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='ShowEvents.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='start.js')}}"></script>
+</html>

@@ -1,0 +1,49 @@
+
+	path:hover {
+		stroke-width: 10;
+	}
+
+	#plane-xz {
+		transform: translate(100px, 1940px) scale(1, -1);
+	}
+
+	#plane-yz {
+		transform: translate(2590px, 1940px) scale(-1, -1);
+	}
+
+	#plane-xy {
+		transform: translate(100px, 2510px) scale(1, -1);
+	}
+
+	#controls {
+		transform: translate(100px, 15px);
+	}
+
+	/*.cluster:hover {
+		border: 2px solid black;
+	}*/
+
+	.activated-cube:hover {
+		stroke-width: 3;
+		stroke: black;
+	}
+
+	.unclusterized-cube:hover {
+		stroke-width: 3;
+		stroke: black;
+	}
+
+	.clusterized3d-cube:hover {
+		stroke-width: 3;
+		stroke: black;
+	}
+
+	.js-cluster:hover {
+		outline-color: black;
+		stroke-width: 3;
+		stroke: red;
+	}
+
+	.predicted-cubes {
+		display: none;
+	}
